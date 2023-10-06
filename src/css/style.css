@@ -80,9 +80,11 @@ form button {
   cursor: pointer;
   font-weight: bold;
   margin-top: 15px;
+  border: none;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 form button:hover {
-  opacity: 0.9;
+background: linear-gradient(270deg, rgba(216,136,49,1) 29%, rgba(210,50,142,1) 73%);
 }
 body .success-message {
   display: flex;
@@ -111,13 +113,15 @@ body .success-message p {
   padding: 12px 10px;
   cursor: pointer;
   font-weight: bold;
-  margin-top: 15px;
   width: 100%;
-  margin: 0 auto;
+  border: none;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .success-message input:hover {
-  background-color: var(--cor-cinza);
+  background: linear-gradient(270deg, rgba(216,136,49,1) 29%, rgba(210,50,142,1) 73%);
 }
+
+
 @media (max-width: 768px) {
   body .container {
     width: 100%;
