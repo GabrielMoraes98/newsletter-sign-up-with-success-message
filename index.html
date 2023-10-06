@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <link rel="stylesheet" href="src/css/variaveis.css">
+  <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+  <main class="container">
+    <div class="informations">
+      <h1>Stay updated!</h1>
+      <p class="join"> Join 60,000+ product managers receiving monthly updates on:</p>
+      <div class="checklist">
+        <p> <img src="src/images/icon-list.svg" alt="checklist">Product discovery and building what matters
+        <p>
+        <p> <img src="src/images/icon-list.svg" alt="checklist">Measuring to ensure updates are a success</p>
+        <p> <img src="src/images/icon-list.svg" alt="checklist">And much more!</p>
+      </div>
+      <form>
+        <label for="email"> Email address</label>
+        <div class="form-control">
+        <input id="email" type="email" placeholder="email@company.com">
+          <button id="button"> Subscribe to monthly newsletter</button>
+          <small>valid email required</small>
+        </div>
+      </form>
+    </div>
+    <div class="espaco-da-imagem">
+    </div>
+  </main>
+  <div class="success-message">
+    <img src="src/images/icon-success.svg" alt="check">
+    <h2>
+      Thanks for subscribing!
+    </h2>
+    <p> A confirmation email has been sent to <span id="email-digitado"></span>
+      Please open it and click the button inside to confirm your subscription.
+    </p>
+    <input type="button" value="Dismiss message" onClick="window.location.reload()">
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
