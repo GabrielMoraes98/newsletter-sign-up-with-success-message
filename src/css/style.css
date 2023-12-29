@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 * {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 body {
@@ -9,10 +11,11 @@ body {
   align-items: center;
   min-height: 100vh;
   font-family: "Roboto", sans-serif;
-  overflow-y: hidden;
+  
 }
 body .container {
   display: flex;
+  align-items:center;
   background-color: #eee;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.632) 0px 3px 8px;
@@ -33,13 +36,19 @@ body .container .informations {
   padding: 2% 6%;
   display: flex;
   flex-direction: column;
+  gap: 20px;
   color: var(--dark-gray);
 }
 body .container .informations h1 {
   font-size: 55px;
 }
-body .container .informations .join {
+/* body .container .informations .join {
   margin-top: -19px;
+} */
+body .container .informations .checklist{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 body .container .informations .checklist img {
   margin-right: 8px;
@@ -125,6 +134,9 @@ body .success-message p {
 
 
 @media (max-width: 768px) {
+  body{
+    align-items: start;
+  }
   body .container {
     width: 100%;
     flex-direction: column-reverse;
@@ -132,11 +144,15 @@ body .success-message p {
     padding: 0px;
     align-items: center;
     height: 100%;
+    gap: 25px;
   }
   body .container .img {
     width: 100%;
     height: 200px;
     background: url(../images/illustration-sign-up-mobile.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
   }
@@ -144,15 +160,9 @@ body .success-message p {
     width: 80%;
     padding: 2%;
     display: flex;
-    flex-direction: column;
-    height: 500px;
-    color: var(--dark-gray);
-  }
-  body .container .informations h1 {
-    font-size: 45px;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   body .container .informations h1 {
     font-size: 28px;
   }
